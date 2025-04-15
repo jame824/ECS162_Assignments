@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York Times</title>
+    <link rel="stylesheet" href="styles.css"> <!-- link to css -->
+
+</head>
+<body>
+
+    <!-- design is based off figma mockup -->
+    
+    <header> <!-- header includes centered nytimes title and date heading on left side--> 
+        <div class="container">
+            <div class="column-header">
+                <p class="date">Day, Month #, Year</p>
+                <p class="todays-paper">Today's Paper</p>
+            </div>
+            <div class="column-header">
+                <h1>
+                    The New York Times
+                </h1>
+            </div>
+            <div class="column-header">
+            </div>
+        </div>
+        <hr class="divbar">
+    </header>
+
+    <main> <!-- main content includes articles split into 3 columns, has additional interactivity when minimized in css -->
+        <div class="container">
+
+            <!-- column 1 -->
+            <div class="column">
+                <img class="center" src="images/e40af2459f761d428c97faa45dfb6f1f.png" alt="basketball-players" width="350" height="250">
+                <h2>
+                    Excepteur sint occaecat cupidatat non proident
+                </h2>
+                <p class="article-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <!-- divider -->
+                <hr class="textdiv">  
+                
+                <h2>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                </h2>
+                <p class="article-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                </p>
+            </div>
+
+            <!-- column 2 -->
+            <div class="column middle">
+                <h2 class="main-article">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </h2>
+                <p class="article-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="article-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <!-- divider -->
+                <hr class="textdiv">  
+
+                <img src="images/9490dbfc2430e16f7ab469f01f10af6e.jpg" alt="brooklyn-bridge-dumbo" width="350" height="250">
+                <h2 class="secondary-middle-article">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </h2>
+                <p class="article-text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+
+            <!-- column 3-->
+            <div class="column">
+                <img src="images/72b4a93b4d4a953ee77cd26f049f4fa5.png" alt="pasta" width="350" height="250">
+                <h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                </h2>
+                <p class="article-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+    
+                <!-- divider -->
+                <hr class="textdiv"> 
+                
+                <h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </h2>
+                <p class="article-text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer> <!-- footer is a divider bar -->
+        <hr class="bottom-bar">
+    </footer>
+
+    <!-- includes javascript functionality to update date -->
+    <script src="script.js"></script>
+
+</body>
+</html>

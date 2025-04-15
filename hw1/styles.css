@@ -1,0 +1,179 @@
+body {
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    box-sizing: border-box;
+}
+
+/* header */
+hr.divbar {
+    border-top: 1px solid lightgray;
+}
+
+/* original font imported */
+@font-face {
+    font-family: 'OldEnglish';
+    src: url('fonts/engravers-old-english-bt.ttf');
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'OldEnglish', sans-serif;
+    font-size: 41px;
+    font-weight: bold;
+}
+
+
+p.date {
+    padding-top: 1.5rem;
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+p.todays-paper {
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+}
+
+.column-header {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+/* main */
+.container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.middle {
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr.textdiv {
+    border-top: 1px solid lightgray;
+}
+
+p.article-text{
+    color: gray;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+h2.main-article {
+    font-weight: bold;
+}
+
+h2.secondary-middle-article {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet View (width between 768px and 1024px) */
+@media screen and (max-width: 1024px) {
+    /* Header adjustments - show only title column */
+    .column-header:first-child,
+    .column-header:last-child {
+        display: none;
+    }
+    
+    .column-header {
+        flex: 1;
+    }
+    
+    /* Main content - change to two columns */
+    main .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    main .column {
+        flex: 0 0 calc(50% - 2rem); /* Two columns with padding accounted for */
+        box-sizing: border-box;
+    }
+    
+    main .column:first-child,
+    main .column.middle {
+        flex: 0 0 calc(50% - 2rem); /* First two columns take 50% width each */
+    }
+    
+    main .middle {
+        border-right: none; /* Remove right border on middle column */
+    }
+    
+    /* Last column moves below two display two columns on top to not remove content from page */
+    main .column:last-child {
+        flex: 0 0 100%;
+        border-top: 1px solid lightgray;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-left: none;
+        border-right: none;
+    }
+}
+  
+/* Mobile View (width < 768px) */
+@media screen and (max-width: 767px) {
+    /* Adjust body padding for smaller screens */
+    body {
+        padding: 1rem;
+    }
+    
+    /* Force the container to column layout */
+    main .container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    
+    /* Make all columns full width and stack vertically */
+    main .column,
+    main .column:first-child,
+    main .column.middle,
+    main .column:last-child {
+        flex: 1 0 100%;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.5rem;
+        margin: 0;
+    }
+    
+    /* Add borders between columns instead of beside them */
+    main .middle {
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        padding: 1rem 0.5rem;
+        margin: 1rem 0;
+    }
+    
+    main .column:last-child {
+        border-top: none; /* Remove border already set by .middle */
+    }
+}
+
+/* footer */
+hr.bottom-bar {
+    border-top: 3px solid black;
+}
+
+  
