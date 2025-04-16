@@ -32,7 +32,7 @@ p.date {
 }
 
 p.todays-paper {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 12px;
 }
 
@@ -46,6 +46,7 @@ p.todays-paper {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    font-family: 'Georgia';
 }
 
 .column {
