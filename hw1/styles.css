@@ -175,6 +175,9 @@ h2.secondary-middle-article {
 /* footer */
 hr.bottom-bar {
     border-top: 3px solid black;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
   

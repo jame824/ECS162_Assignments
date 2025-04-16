@@ -1,4 +1,9 @@
-// Function to update the date in the header
+/**
+ * Updates the date in the header
+ * 
+ * @returns DOM object associated with formatted date
+ */
+
 function updateDate() {
     // Get current date
     const now = new Date();
